@@ -1,0 +1,172 @@
+/* The code on lines 2-4 centers the text of all h1's on the page.*/
+h1{
+    text-align:center;
+}
+/*The code on lines 6-11 centers all images on the page and gives them a width of 400px.*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:400px;
+}
+
+/* The code on lines 14-16 centers the text of all h2's on the page*/
+h2{
+    text-align:center;
+}
+
+/* The code on lines 19-22 aligns all the sections horizontally on the bottom*/
+.sectionsContainer{
+    display:flex;
+    justify-content:space-between;
+}
+.video{
+    display:flex;
+    justify-content:center;
+}
+
+/* The code on lines 25-28 gives  a solid black border to section and puts space between them (the margin) */
+.section{
+    border: 5px #bdbdbd solid;
+    margin:5px;
+}
+
+
+
+body,html{
+    width:100%;
+    height: 100%;
+}
+body{
+    background-image:url("https://img.freepik.com/premium-photo/front-view-energy-drink-can-dark-background-color-drink-photo-darkness-soda-bar-night_461922-26155.jpg");
+    background-repeat: no-repeat;
+    background-size: 190%;
+}
+.title{
+    color: white;
+    font-family: 'Dosis';
+
+}
+.title2{
+    color: blueviolet;
+    font-family: 'Dosis';
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+
+.bubbles{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    z-index:0;
+    overflow:hidden;
+    top:0;
+    left:0;
+}
+.bubble{
+    position: absolute;
+    bottom:-100px;
+    width:40px;
+    height: 40px;
+    background-color:#db0f42;
+    border-radius:50%;
+    opacity:0.5;
+    animation: rise 10s infinite ease-in;
+}
+.bubble:nth-child(1){
+    width:40px;
+    height:40px;
+    left:10%;
+    animation-duration:8s;
+}
+.bubble:nth-child(2){
+    width:20px;
+    height:20px;
+    left:20%;
+    animation-duration:5s;
+    animation-delay:1s;
+}
+.bubble:nth-child(3){
+    width:50px;
+    height:50px;
+    left:35%;
+    animation-duration:7s;
+    animation-delay:2s;
+}
+.bubble:nth-child(4){
+    width:80px;
+    height:80px;
+    left:50%;
+    animation-duration:11s;
+    animation-delay:0s;
+}
+.bubble:nth-child(5){
+    width:35px;
+    height:35px;
+    left:55%;
+    animation-duration:6s;
+    animation-delay:1s;
+}
+.bubble:nth-child(6){
+    width:45px;
+    height:45px;
+    left:65%;
+    animation-duration:8s;
+    animation-delay:3s;
+}
+.bubble:nth-child(7){
+    width:90px;
+    height:90px;
+    left:70%;
+    animation-duration:12s;
+    animation-delay:2s;
+}
+.bubble:nth-child(8){
+    width:25px;
+    height:25px;
+    left:80%;
+    animation-duration:2s;
+    animation-delay:2s;
+}
+.bubble:nth-child(9){
+    width:15px;
+    height:15px;
+    left:70%;
+    animation-duration:5s;
+    animation-delay:1s;
+}
+.bubble:nth-child(10){
+    width:90px;
+    height:90px;
+    left:25%;
+    animation-duration:10s;
+    animation-delay:4s;
+}
+@keyframes rise{
+    0%{
+        bottom:-100px;
+        transform:translateX(0);
+    }
+    50%{
+        transform:translate(100px);
+    }
+    100%{
+        bottom:1080px;
+        transform:translateX(-200px);
+    }
+}
